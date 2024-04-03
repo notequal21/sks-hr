@@ -1,0 +1,90 @@
+.main {
+  background-image: url(../img/main/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: rem(104) 0 rem(81);
+
+  @media (max-width: $tablet) {
+    padding: rem(30) 0;
+  }
+
+  &__container {
+  }
+
+  &-body {
+    display: flex;
+    gap: rem(68);
+    align-items: flex-start;
+
+    @media (max-width: $tablet) {
+      gap: rem(24);
+      flex-direction: column-reverse;
+    }
+
+    &__content {
+      @media (max-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-title {
+      }
+
+      &-text {
+        margin: rem(32) 0 0;
+        line-height: 150%;
+        font-size: rem(16);
+        color: cl(drk, 0.7);
+        max-width: rem(590);
+
+        @media (max-width: $tablet) {
+          margin: rem(14) 0 0;
+        }
+      }
+
+      &-btn {
+        margin: rem(48) 0 0;
+
+        @media (max-width: $tablet) {
+          margin: rem(14) 0 0;
+        }
+      }
+    }
+
+    &__video {
+      flex: 0 0 rem(464);
+      position: relative;
+
+      overflow: hidden;
+      border-radius: rem(20);
+
+      @media (max-width: $tablet) {
+        order: -1;
+        flex: 0 0 auto;
+
+        width: 100%;
+        max-width: rem(500);
+      }
+
+      img,
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        transition: all $time $tr;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

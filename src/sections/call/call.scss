@@ -1,0 +1,110 @@
+.call {
+  margin: rem(90) 0 0;
+  background: #333;
+
+  @media (max-width: $mobile) {
+    margin: rem(60) 0 0;
+  }
+
+  &__container {
+  }
+
+  &-body {
+    padding: rem(100) 0;
+    display: flex;
+    align-items: center;
+    gap: rem(50);
+    justify-content: space-between;
+
+    @media (max-width: $mobile) {
+      flex-direction: column-reverse;
+      padding: rem(50) 0;
+      gap: rem(30);
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: rem(50);
+
+      @media (max-width: $mobile) {
+        width: 100%;
+      }
+
+      &-title {
+      }
+
+      &-btns {
+        display: flex;
+        gap: rem(20);
+        flex-wrap: wrap;
+
+        @media (max-width: $mobile) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        a {
+          display: flex;
+          align-items: center;
+          gap: rem(10);
+          padding: rem(18) rem(20);
+
+          border: rem(1) solid cl(whte);
+          border-radius: rem(1000);
+
+          font-weight: 600;
+          font-size: rem(16);
+          color: cl(whte);
+
+          transition: all $time $tr;
+
+          &:hover {
+            border-color: cl('red');
+          }
+
+          &._tel {
+            border-color: cl('red');
+            background-color: cl('red');
+            &:hover {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+
+    &__icon {
+      flex: 0 0 auto;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: rem(66);
+      height: rem(66);
+      border-radius: 50%;
+      background: cl('red');
+
+      &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: calc(100% + rem(14));
+        height: calc(100% + rem(14));
+        border-radius: 50%;
+        background: cl('red', 0.3);
+      }
+
+      svg,
+      img {
+        width: rem(35);
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+}

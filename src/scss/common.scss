@@ -1,0 +1,69 @@
+.h1,
+.h2,
+.h3 {
+  font-family: 'Raleway', sans-serif;
+  color: cl(drk);
+
+  &._white {
+    color: cl(whte);
+  }
+}
+
+.h1 {
+  font-weight: 800;
+  font-size: rem(70);
+  line-height: 106%;
+
+  @media (max-width: $tablet) {
+    font-size: rem(50);
+  }
+  @media (max-width: $mobile) {
+    font-size: rem(40);
+  }
+}
+
+.h2 {
+  font-weight: 700;
+  font-size: rem(46);
+
+  @media (max-width: $tablet) {
+    font-size: rem(36);
+  }
+  @media (max-width: $mobile) {
+    font-size: rem(26);
+  }
+}
+
+.h3 {
+  font-weight: 700;
+  font-size: rem(44);
+
+  @media (max-width: $tablet) {
+    font-size: rem(34);
+  }
+  @media (max-width: $mobile) {
+    font-size: rem(26);
+  }
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: rem(12) rem(20);
+  border-radius: rem(12);
+  background: cl('red');
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: rem(18);
+  line-height: 130%;
+  color: cl(whte);
+
+  transition: all $time $tr;
+  &:hover {
+    background: cl('red', 0.7);
+  }
+}

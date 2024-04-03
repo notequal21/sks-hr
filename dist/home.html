@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8"><!-- не забыть удалить мета тег robots ниже-->
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<title>HomePage</title>
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="./img/favicon/favicon.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="./img/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./img/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./img/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./img/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./img/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./img/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./img/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="./favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="./android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="./favicon-16x16.png" sizes="16x16">
+	<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#C2AB81">
+	<meta name="msapplication-TileColor" content="#272727">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#C2AB81">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240403100551">
+	<script>
+		var baseUrl = "./js/";
+	</script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container _wide">
+				<div class="header-body">
+					<div class="header-body__logo">
+						<div class="header-body__logo-col">
+							<img src="./img/header/logo.svg" alt="">
+						</div>
+						<div class="header-body__logo-col">
+							<img src="./img/header/registry.svg" alt="">
+							Состоим в государственном <br> реестре ломбардов
+						</div>
+					</div>
+					<nav class="header-body__nav">
+						<ul>
+							<li>
+								<a href="#vacancies">
+									Вакансии
+								</a>
+							</li>
+							<li>
+								<a href="#advantages">
+									Преимущества
+								</a>
+							</li>
+							<li>
+								<a href="#team">
+									Жизнь компании
+								</a>
+							</li>
+							<li>
+								<a href="#contacts">
+									Контакты
+								</a>
+							</li>
+						</ul>
+						<a href="popup-form.html" data-popup="#form-modal" data-id="0" class="header-body__nav-btn btn">Заполнить
+							анкету</a>
+						<div class="header-body__nav-city">
+							<img src="./img/header/compas-light.svg" alt="">
+							<select class="select-address" id="select-address">
+								<option value="">Выбор города...</option>
+								<option value="Бирск">Бирск</option>
+								<option value="Булгаково">Булгаково</option>
+								<option value="Ижевск">Ижевск</option>
+								<option value="Нефтекамск">Нефтекамск</option>
+								<option value="Октябрьский">Октябрьский</option>
+								<option value="Стерлитамак">Стерлитамак</option>
+								<option value="Туймазы">Туймазы</option>
+								<option value="Уфа">Уфа</option>
+								<option value="Чишмы">Чишмы</option>
+							</select>
+						</div>
+					</nav>
+					<div class="header-body__address">
+						<img src="./img/header/compas.svg" alt="">
+						<select class="select-address" id="select-address">
+							<option value="">Выбор города...</option>
+							<option value="Бирск">Бирск</option>
+							<option value="Булгаково">Булгаково</option>
+							<option value="Ижевск">Ижевск</option>
+							<option value="Нефтекамск">Нефтекамск</option>
+							<option value="Октябрьский">Октябрьский</option>
+							<option value="Стерлитамак">Стерлитамак</option>
+							<option value="Туймазы">Туймазы</option>
+							<option value="Уфа">Уфа</option>
+							<option value="Чишмы">Чишмы</option>
+						</select>
+					</div>
+					<div class="header-body__burger">
+						<svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="20" height="2" rx="1" fill="#1C1C1C" />
+							<rect y="6" width="20" height="2" rx="1" fill="#1C1C1C" />
+							<rect y="12" width="20" height="2" rx="1" fill="#1C1C1C" />
+						</svg>
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="12" cy="12" r="12" fill="#333333" />
+							<rect x="8" y="14.8572" width="9.6975" height="1.61625" rx="0.808125" transform="rotate(-45 8 14.8572)" fill="white" />
+							<rect x="9.14307" y="8" width="9.6975" height="1.61625" rx="0.808125" transform="rotate(45 9.14307 8)" fill="white" />
+						</svg>
+						<!-- <span></span>
+        <span></span>
+        <span></span> -->
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="main">
+				<div class="main__container _wide">
+					<div class="main-body">
+						<div class="main-body__content">
+							<div class="main-body__content-title h1">
+								Открой для себя идеальную работу
+							</div>
+							<div class="main-body__content-text">
+								Наши коллеги чувствуют, что они ценны. Посмотри открытые вакансии, оставь заявку и тебе не придется долго
+								ждать работу мечты.
+							</div>
+							<a href="popup-form.html" data-popup="#form-modal" data-id="0" class="main-body__content-btn btn">
+								Заполнить анкету
+							</a>
+						</div>
+						<div class="main-body__video">
+							<picture><source srcset="./img/main/placeholder.webp" type="image/webp"><img src="./img/main/placeholder.jpg" alt=""></picture>
+							<a href="./files/video.mp4" data-fancybox>
+								<svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="29" cy="29" r="29" fill="#E32A17" />
+									<path d="M39 29L24 37.6603L24 20.3397L39 29Z" fill="white" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="vacancies" class="vacancies">
+				<div class="vacancies__container _wide">
+					<div class="vacancies-body">
+						<div class="vacancies-content">
+							<div class="vacancies-content__top">
+								<div class="vacancies-content__top-title h3 _white">
+									Вакансии
+								</div>
+								<div class="vacancies-content__top-city">
+									<img src="./img/vacancies/address.svg" alt="">
+									<span>Уфа</span>
+								</div>
+							</div>
+							<a href="popup-form.html" data-popup="#form-modal" data-id="1" class="vacancies-content__row">
+								<div class="vacancies-content__row-pos">
+									Товаровед-кассир
+								</div>
+								<div class="vacancies-content__row-price">
+									66 000 рублей
+								</div>
+								<div class="vacancies-content__row-icon">
+									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683418 14.0976 1.31658 14.0976 1.70711 13.7071L0.292893 12.2929ZM14 0.999999C14 0.447714 13.5523 -8.61581e-07 13 -1.11446e-06L4 -3.13672e-07C3.44772 -6.50847e-07 3 0.447715 3 0.999999C3 1.55228 3.44772 2 4 2L12 2L12 10C12 10.5523 12.4477 11 13 11C13.5523 11 14 10.5523 14 10L14 0.999999ZM1.70711 13.7071L13.7071 1.70711L12.2929 0.292893L0.292893 12.2929L1.70711 13.7071Z" fill="white" />
+									</svg>
+								</div>
+							</a>
+							<a href="popup-form.html" data-popup="#form-modal" data-id="2" class="vacancies-content__row">
+								<div class="vacancies-content__row-pos">
+									Супервайзер
+								</div>
+								<div class="vacancies-content__row-price">
+									66 000 рублей
+								</div>
+								<div class="vacancies-content__row-icon">
+									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683418 14.0976 1.31658 14.0976 1.70711 13.7071L0.292893 12.2929ZM14 0.999999C14 0.447714 13.5523 -8.61581e-07 13 -1.11446e-06L4 -3.13672e-07C3.44772 -6.50847e-07 3 0.447715 3 0.999999C3 1.55228 3.44772 2 4 2L12 2L12 10C12 10.5523 12.4477 11 13 11C13.5523 11 14 10.5523 14 10L14 0.999999ZM1.70711 13.7071L13.7071 1.70711L12.2929 0.292893L0.292893 12.2929L1.70711 13.7071Z" fill="white" />
+									</svg>
+								</div>
+							</a>
+							<a href="popup-form.html" data-popup="#form-modal" data-id="3" class="vacancies-content__row">
+								<div class="vacancies-content__row-pos">
+									Товаровед-кассир
+								</div>
+								<div class="vacancies-content__row-price">
+									66 000 рублей
+								</div>
+								<div class="vacancies-content__row-icon">
+									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683418 14.0976 1.31658 14.0976 1.70711 13.7071L0.292893 12.2929ZM14 0.999999C14 0.447714 13.5523 -8.61581e-07 13 -1.11446e-06L4 -3.13672e-07C3.44772 -6.50847e-07 3 0.447715 3 0.999999C3 1.55228 3.44772 2 4 2L12 2L12 10C12 10.5523 12.4477 11 13 11C13.5523 11 14 10.5523 14 10L14 0.999999ZM1.70711 13.7071L13.7071 1.70711L12.2929 0.292893L0.292893 12.2929L1.70711 13.7071Z" fill="white" />
+									</svg>
+								</div>
+							</a>
+							<a href="popup-form.html" data-popup="#form-modal" data-id="4" class="vacancies-content__row">
+								<div class="vacancies-content__row-pos">
+									Продавец-консультант
+								</div>
+								<div class="vacancies-content__row-price">
+									66 000 рублей
+								</div>
+								<div class="vacancies-content__row-icon">
+									<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683418 14.0976 1.31658 14.0976 1.70711 13.7071L0.292893 12.2929ZM14 0.999999C14 0.447714 13.5523 -8.61581e-07 13 -1.11446e-06L4 -3.13672e-07C3.44772 -6.50847e-07 3 0.447715 3 0.999999C3 1.55228 3.44772 2 4 2L12 2L12 10C12 10.5523 12.4477 11 13 11C13.5523 11 14 10.5523 14 10L14 0.999999ZM1.70711 13.7071L13.7071 1.70711L12.2929 0.292893L0.292893 12.2929L1.70711 13.7071Z" fill="white" />
+									</svg>
+								</div>
+							</a>
+						</div>
+						<div class="vacancies__img">
+							<picture><source srcset="./img/vacancies/img.webp" type="image/webp"><img src="./img/vacancies/img.jpg" alt=""></picture>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="advantages" class="why">
+				<div class="why__container _wide">
+					<div class="why__title h2">
+						Почему с нами надежно
+					</div>
+				</div>
+				<div class="why__container _wide">
+					<div class="why-body">
+						<div class="why-body__item">
+							<div class="why-body__item-top">
+								<img src="./img/why/1.svg" alt="">
+								Обучение
+							</div>
+							<div class="why-body__item-text">
+								У нас Вы можете регулярно обучаться и при этом получать стипендию
+							</div>
+						</div>
+						<div class="why-body__item">
+							<div class="why-body__item-top">
+								<img src="./img/why/2.svg" alt="">
+								Стабильность
+							</div>
+							<div class="why-body__item-text">
+								Стабильная заработная плата от 50 тыс. руб.
+							</div>
+						</div>
+						<div class="why-body__item">
+							<div class="why-body__item-top">
+								<img src="./img/why/3.svg" alt="">
+								Все по белому
+							</div>
+							<div class="why-body__item-text">
+								Официальное трудоустройство, социальный пакет
+							</div>
+						</div>
+						<div class="why-body__item">
+							<div class="why-body__item-top">
+								<img src="./img/why/4.svg" alt="">
+								Карьера
+							</div>
+							<div class="why-body__item-text">
+								Возможность карьерного роста — и это доказано на практике
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="gallery">
+				<div class="gallery__container _extrawide">
+					<div class="gallery-body">
+						<button class="gallery-body__btn gallery-slider-prev">
+							<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.292893 7.29289C-0.0976309 7.68342 -0.097631 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538408 7.04738 0.538408 6.65685 0.928933L0.292893 7.29289ZM2 7L1 7L1 9L2 9L2 7Z" fill="white" />
+							</svg>
+						</button>
+						<div class="gallery-body__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<picture><source srcset="./img/gallery/igm.webp" type="image/webp"><img src="./img/gallery/igm.jpg" alt=""></picture>
+								</div>
+								<div class="swiper-slide">
+									<picture><source srcset="./img/gallery/igm.webp" type="image/webp"><img src="./img/gallery/igm.jpg" alt=""></picture>
+								</div>
+								<div class="swiper-slide">
+									<picture><source srcset="./img/gallery/igm.webp" type="image/webp"><img src="./img/gallery/igm.jpg" alt=""></picture>
+								</div>
+							</div>
+						</div>
+						<div class="gallery-body__pagination"></div>
+						<button class="gallery-body__btn gallery-slider-next">
+							<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.70711 7.29289C9.09763 7.68342 9.09763 8.31658 8.70711 8.70711L2.34315 15.0711C1.95262 15.4616 1.31946 15.4616 0.928933 15.0711C0.538408 14.6805 0.538408 14.0474 0.928933 13.6569L6.58579 8L0.928932 2.34315C0.538407 1.95262 0.538407 1.31946 0.928932 0.928933C1.31946 0.538408 1.95262 0.538408 2.34315 0.928933L8.70711 7.29289ZM7 7L8 7L8 9L7 9L7 7Z" fill="white" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="form">
+				<div class="form__container _wide">
+					<div class="form-body">
+						<div class="form-body__title h2 _white">
+							Нашли подходящие вакансии?
+						</div>
+						<div class="form-body__label">
+							Заполни форму и мы с тобой свяжемся
+						</div>
+						<form target="#" class="form-body__content">
+							<div class="form-body__content-body">
+								<div class="form-body__content-col">
+									<label>
+										<input type="text" data-required="" placeholder="Фамилия*">
+									</label>
+									<label>
+										<input type="text" data-required="" placeholder="Имя*">
+									</label>
+									<select>
+										<option value="">Город</option>
+										<option value="1">Город 1</option>
+										<option value="2">Город 2</option>
+									</select>
+									<select>
+										<option value="">Вакансия</option>
+										<option value="1">Вакансия 1</option>
+										<option value="2">Вакансия 2</option>
+									</select>
+									<label>
+										<input type="text" data-required="" class="_phone-mask" placeholder="Телефон*">
+									</label>
+								</div>
+								<div class="form-body__content-col">
+									<label>
+										<input type="text" placeholder="Ссылка на резюме">
+									</label>
+									<p>Или</p>
+									<label class="form-body__file">
+										<input type="file" accept="application/msword, application/pdf">
+										<span class="form-body__file-fake">
+											<span class="form-body__file-text">Выберите файл</span>
+											<span class="form-body__file-type">Форматы файла: DOC, DOCX, PDF.</span>
+										</span>
+									</label>
+									<label class="_textarea">
+										<textarea placeholder="Сопроводительное письмо"></textarea>
+									</label>
+								</div>
+							</div>
+							<label class="form-body__content-agree">
+								<input type="checkbox" data-required="">
+								<span class="_fake">
+									<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 30 30">
+										<path d="M 26.980469 5.9902344 A 1.0001 1.0001 0 0 0 26.292969 6.2929688 L 11 21.585938 L 4.7070312 15.292969 A 1.0001 1.0001 0 1 0 3.2929688 16.707031 L 10.292969 23.707031 A 1.0001 1.0001 0 0 0 11.707031 23.707031 L 27.707031 7.7070312 A 1.0001 1.0001 0 0 0 26.980469 5.9902344 z">
+										</path>
+									</svg>
+								</span>
+								<span class="_text">
+									Я соглашаюсь на обработку <span>моих персональных данных</span>
+								</span>
+							</label>
+							<button class="form-body__content-submit btn">
+								Отправить резюме
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div id="team" class="team">
+				<div class="team__container _extrawide">
+					<div class="team__title h2">
+						Жизнь компании
+					</div>
+					<div class="team-body">
+						<button class="gallery-body__btn team-slider-prev">
+							<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.292893 7.29289C-0.0976309 7.68342 -0.097631 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928933C7.68054 0.538408 7.04738 0.538408 6.65685 0.928933L0.292893 7.29289ZM2 7L1 7L1 9L2 9L2 7Z" fill="white" />
+							</svg>
+						</button>
+						<div class="gallery-body__slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="team-item">
+										<div class="team-item__img">
+											<picture><source srcset="./img/team/img.webp" type="image/webp"><img src="./img/team/img.jpg" alt=""></picture>
+										</div>
+										<div class="team-item__content">
+											<div class="team-item__content-title">
+												Наша волейбольная команда
+											</div>
+											<div class="team-item__content-text">
+												<p>
+													Наша волейбольная команда — это группа талантливых спортсменов, которые работают вместе, чтобы
+													достичь общей цели — победы в каждом матче.
+												</p>
+												<p>
+													Каждый игрок в нашей команде является важным звеном в цепи, и каждый из них обладает уникальными
+													навыками и способностями, которые помогают нам достигать успеха. Мы постоянно тренируемся и улучшаем
+													свои навыки, чтобы быть готовыми к любым вызовам, которые могут возникнуть во время игры.
+												</p>
+												<p>
+													Наша команда — это не просто группа игроков, это настоящая семья, которая поддерживает друг друга и
+													работает вместе, чтобы достичь больших результатов.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="team-item">
+										<div class="team-item__img">
+											<picture><source srcset="./img/team/img.webp" type="image/webp"><img src="./img/team/img.jpg" alt=""></picture>
+										</div>
+										<div class="team-item__content">
+											<div class="team-item__content-title">
+												Наша волейбольная команда
+											</div>
+											<div class="team-item__content-text">
+												<p>
+													Наша волейбольная команда — это группа талантливых спортсменов, которые работают вместе, чтобы
+													достичь общей цели — победы в каждом матче.
+												</p>
+												<p>
+													Каждый игрок в нашей команде является важным звеном в цепи, и каждый из них обладает уникальными
+													навыками и способностями, которые помогают нам достигать успеха. Мы постоянно тренируемся и улучшаем
+													свои навыки, чтобы быть готовыми к любым вызовам, которые могут возникнуть во время игры.
+												</p>
+												<p>
+													Наша команда — это не просто группа игроков, это настоящая семья, которая поддерживает друг друга и
+													работает вместе, чтобы достичь больших результатов.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="gallery-body__pagination"></div>
+						<button class="gallery-body__btn team-slider-next">
+							<svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M8.70711 7.29289C9.09763 7.68342 9.09763 8.31658 8.70711 8.70711L2.34315 15.0711C1.95262 15.4616 1.31946 15.4616 0.928933 15.0711C0.538408 14.6805 0.538408 14.0474 0.928933 13.6569L6.58579 8L0.928932 2.34315C0.538407 1.95262 0.538407 1.31946 0.928932 0.928933C1.31946 0.538408 1.95262 0.538408 2.34315 0.928933L8.70711 7.29289ZM7 7L8 7L8 9L7 9L7 7Z" fill="white" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div id="contacts" class="call">
+				<div class="call__container">
+					<div class="call-body">
+						<div class="call-body__content">
+							<div class="call-body__content-title h3 _white">
+								Мы на связи
+							</div>
+							<div class="call-body__content-btns">
+								<a href="tel:+79053510308" class="_tel">
+									<img src="./img/call/1.svg" alt="">
+									8 (905) 351-03-08
+								</a>
+								<a href="mailto:mail@mail.ru">
+									<img src="./img/call/2.svg" alt="">
+									mail@mail.ru
+								</a>
+								<a href="">
+									<img src="./img/call/3.svg" alt="">
+									telegram
+								</a>
+								<a href="">
+									<img src="./img/call/4.svg" alt="">
+									vkontakte
+								</a>
+							</div>
+						</div>
+						<!-- <div class="call-body__icon">
+        <svg width="40" height="33" viewBox="0 0 40 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="12.3333" y="9.33337" width="26" height="19.3333" rx="3" fill="white" stroke="#E32A17"
+            stroke-width="2" />
+          <path
+            d="M4.66666 1.33337C3.0098 1.33337 1.66666 2.67652 1.66666 4.33337V17.6667C1.66666 19.3236 3.0098 20.6667 4.66666 20.6667H14.6667H24.6667C26.3235 20.6667 27.6667 19.3236 27.6667 17.6667V4.33337C27.6667 2.67652 26.3235 1.33337 24.6667 1.33337H4.66666Z"
+            fill="white" stroke="#E32A17" stroke-width="2" />
+          <path d="M6.66666 23.6667V16.3334H12.6667L6.66666 23.6667Z" fill="white" stroke="white" />
+          <path d="M33.3333 31.0001V23.6667H27.3333L33.3333 31.0001Z" fill="white" stroke="white" />
+        </svg>
+      </div> -->
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer-body">
+					<div class="footer-body__col">
+						<div class="footer-info">
+							<div class="footer-info__logo">
+								<img src="./img/header/logo.svg" alt="">
+							</div>
+							<div class="footer-info__text">
+								ООО «СКС Ломбард» <br>
+								ИНН 0273086494 <br>
+								ОГРН 1120280016120
+							</div>
+							<div class="footer-info__cr">
+								Создание сайта — Агентство интернет-маркетинга Рестарт
+							</div>
+						</div>
+					</div>
+					<div class="footer-body__col">
+						<nav class="footer-nav">
+							<ul>
+								<li>
+									<a href="#vacancies">
+										Вакансии
+									</a>
+								</li>
+								<li>
+									<a href="#advantages">
+										Преимущества
+									</a>
+								</li>
+								<li>
+									<a href="#team">
+										Жизнь компании
+									</a>
+								</li>
+								<li>
+									<a href="#contacts">
+										Контакты
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div id="status-template" aria-hidden="true" class="popup">
+			<div class="popup__wrapper">
+				<div class="popup__content">
+					<button data-close type="button" class="popup__close"></button>
+					<div class="popup__text">Произошла ошибка</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20240403100551"></script>
+</body>
+
+</html>

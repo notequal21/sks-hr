@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+@@include('html/_head.htm',{ "title":"HomePage" })
+
+<body>
+  <div class="wrapper">
+    @@include('components/header/header.html',{})
+
+    <main class="page">
+      <section class="index-page">
+        <div class="index-page__container">
+          <h1 class="index-page__title _title">Страницы:</h1>
+          <ol style="list-style-position: inside">
+            <li style="margin-bottom: 10px">
+              <a href="home.html">Главная</a>
+            </li>
+          </ol>
+          <h2 class="index-page__title _title">Модальные окна</h2>
+          <ol style="list-style-position: inside">
+            <li style="margin-bottom: 10px">
+              <a href="popup-callback.html" data-popup="#callback-modal">Оставить заявку</a>
+            </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+    @@include('components/footer/footer.html',{})
+    @@include('html/_popup.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

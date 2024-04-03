@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{ "title":"HomePage" })
+
+<body>
+  <div class="wrapper">
+    @@include('components/header/header.html',{})
+
+    <main class="page">
+      @@include('sections/main/main.html',{})
+      @@include('sections/vacancies/vacancies.html',{})
+      @@include('sections/why/why.html',{})
+      @@include('sections/gallery/gallery.html',{})
+      @@include('sections/form/form.html',{})
+      @@include('sections/team/team.html',{})
+      @@include('sections/call/call.html',{})
+    </main>
+
+    @@include('components/footer/footer.html',{})
+    @@include('html/_popup.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
+</html>
