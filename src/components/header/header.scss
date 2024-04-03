@@ -294,6 +294,20 @@
           display: none;
         }
 
+        &.is-flipped {
+          .choices__list.choices__list--dropdown {
+            top: calc(100%) !important;
+            bottom: auto !important;
+          }
+
+          .choices__list--dropdown,
+          .choices__list[aria-expanded] {
+            .choices__list {
+              max-height: calc(100vh - rem(50));
+            }
+          }
+        }
+
         &__inner {
           padding: 0 !important;
           border: none !important;

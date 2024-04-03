@@ -53,6 +53,7 @@ window.initSliders = initSliders;
 createSlider('.gallery-body .gallery-body__slider', {
   modules: [Navigation, Pagination],
   autoHeight: true,
+  loop: true,
   navigation: {
     prevEl: '.gallery-body .gallery-slider-prev',
     nextEl: '.gallery-body .gallery-slider-next',

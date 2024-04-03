@@ -5,3 +5,5 @@ import '../components/select/select.js';
 import '../components/anchors/anchors.js';
 import '../components/videoGallery/videoGallery.js';
 import '../components/selectAddress/selectAddress.js';
+
+import '../components/vacanciesMore/vacanciesMore.js';
