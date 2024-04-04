@@ -3752,6 +3752,11 @@ body::after {
           transform: translate(0, -50%) scale(1, -1);
 }
 
+.choices.is-flipped .choices__list.choices__list--dropdown {
+  top: auto !important;
+  bottom: calc(100% + 0.625rem) !important;
+}
+
 .choices__inner {
   border: 0.0625rem solid rgba(255, 255, 255, 0.6);
   border-radius: 0.75rem !important;

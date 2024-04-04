@@ -22,6 +22,13 @@
     }
   }
 
+  &.is-flipped {
+    .choices__list.choices__list--dropdown {
+      top: auto !important;
+      bottom: calc(100% + rem(10)) !important;
+    }
+  }
+
   &__inner {
     border: rem(1) solid rgba(255, 255, 255, 0.6);
     border-radius: rem(12) !important;
